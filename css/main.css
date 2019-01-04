@@ -1,0 +1,218 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  background: #dee2e6;
+  color: #b8b8b8;
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.45;
+  color: #000;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #b8b8b8;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* ---------------
+*  Column Block
+*  --------------*/
+.columns-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 60px auto;
+  padding: 0;
+  /*  ---------------
+  *  Right-col
+  *  ----------------*/
+}
+
+.columns-block .blocks {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.columns-block .left-col-block {
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  border-right: 1px solid #adb5bd;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+  height: 50%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.columns-block .left-col-block .profile-img img {
+  width: 100%;
+}
+
+.columns-block .left-col-block .social-icons li {
+  display: inline;
+  padding: 13px 8px;
+}
+
+.columns-block .left-col-block .content {
+  padding: 4px 15px;
+}
+
+.columns-block .left-col-block .content span {
+  font-size: 18px;
+  color: #495057;
+}
+
+.columns-block .right-col-block {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 0px;
+          flex: 2 0 0;
+  position: relative;
+  background: #fff;
+  margin-left: 60px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+  float: right !important;
+}
+
+/*  ---------------
+*  expertise-wrapper (About)
+*  ----------------*/
+.expertise-wrapper {
+  border-bottom: 1px solid #eaeaea;
+}
+
+/*-------------------
+ * Skills Progressbar
+ *-------------------*/
+.progress-item {
+  position: relative;
+}
+
+.progress-item .progress-title {
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/*  -----------------
+*  Section-portfolio
+*  -----------------*/
+.portfolio-item {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.portfolio-item .portfolio-thumb img {
+  height: auto;
+  display: block;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 3px #ccc;
+          box-shadow: 0 3px 3px #ccc;
+}
+
+.portfolio-item .portfolio-info {
+  position: absolute;
+  bottom: 0;
+  padding: 30px 15px 5px;
+  width: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.portfolio-item .portfolio-info h3 {
+  color: #fff;
+  margin: 0;
+  line-height: 1;
+}
+
+.portfolio-item .portfolio-info small {
+  color: #fff;
+}
+
+.portfolio-item:hover .portfolio-info {
+  background: -webkit-linear-gradient(top, transparent 0%, #000 100%);
+}
+
+.section-body p.email {
+  text-align: center;
+}
+
+.section-body p.text {
+  text-align: right;
+}
+
+/*  --------------------------
+    *  Media Query Columns Block
+    *  ---------------------------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .columns-block {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .columns-block .left-col-block {
+    margin: 20px 0;
+    padding: 0px 0;
+  }
+  .columns-block .right-col-block {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .columns-block .section-body p {
+    text-align: left;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {
+    background: green;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+}
+/*# sourceMappingURL=main.css.map */
